@@ -1,0 +1,15 @@
+# Java build output
+*.class
+*.jar
+*.war
+*.ear
+bin/
+out/
+target/
+build/
+.gradle/
+
+# Local secrets
+.env
+.env.*
+!.env.example
