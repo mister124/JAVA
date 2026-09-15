@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+Scanner scanner = new Scanner(System.in);
+
+void main() {
+    // // 1. 공백 기준으로 문자열 한 단어씩 입력
+    // String s1 = scanner.next();
+    // IO.println(s1);
+
+    // // 2. 한 줄 전체를 문자열 하나로 입력
+    // String line = IO.readln();
+    // IO.println(line);
+
+    // // 3. 한 줄 전체 입력 후 공백 기준으로 배열 저장
+    // String line = IO.readln();
+    // String[] words = line.split(" ");
+    // // trim() → 앞뒤 공백 제거, \\s+ → 공백/탭 등이 1개 이상 연속된 부분 기준 분리
+    // String[] words = line.trim().split("\\s+");
+}
