@@ -1,3 +1,4 @@
+package week1;
 void main() {
     // IO.println 출력 후 줄바꿈
     IO.println("Enter Command String! Enter Command String! Enter Command String! Enter Command String! Cafe Name: Starbucks Beverage Count: 3");

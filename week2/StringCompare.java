@@ -1,3 +1,4 @@
+package week2;
 void main() {
     // TODO: IO.readln()으로 두 줄을 읽고 세 비교 메서드를 순서대로 호출한다.
     String s1 = IO.readln();

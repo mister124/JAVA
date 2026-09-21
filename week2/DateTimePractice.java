@@ -1,3 +1,4 @@
+package week2;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.ZoneId;

@@ -1,3 +1,4 @@
+package week3;
 import java.io.PrintStream;
 import java.util.Locale;
 import java.util.Scanner;
