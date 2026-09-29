@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group = 'pnu.cse.pbp'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(26)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.42'
+    annotationProcessor 'org.projectlombok:lombok:1.18.42'
+
+    implementation 'org.hibernate.orm:hibernate-core:7.1.1.Final'
+    runtimeOnly 'com.h2database:h2:2.3.232'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:6.1.3'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.register('runJdbc', JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'pnu.cse.pbp.UserJdbcDemo'
+}
